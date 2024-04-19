@@ -62,7 +62,7 @@ const Alert: FC<AlertProps> = ({
       </div>
       {closeable && (
         <button
-          className={`bg-transparent text-slate-800 flex items-center justify-center absolute p-2 top-2 right-2 p-0 hover:border-0`}
+          className={`bg-transparent text-slate-800 flex items-center justify-center absolute p-2 top-2 right-2 hover:border-0`}
           onClick={handleClose}
         >
           <FontAwesomeIcon icon={faXmark} />
