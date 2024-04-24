@@ -20,7 +20,7 @@ const Button = ({ variant = 'primary', size = 'medium', onClick, children }: But
 
   return (
     <button
-      className={`button text-slate-900 hover:outline-0 transition-colors ${variantClasses[variant]} ${sizeClasses[size]}`}
+      className={`button hover:outline-0 transition-colors ${variantClasses[variant]} ${sizeClasses[size]}`}
       type="button"
       onClick={onClick}
     >
