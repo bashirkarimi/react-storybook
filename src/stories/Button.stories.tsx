@@ -4,7 +4,14 @@ export default {
   title: "Components/Button",
   component: Button,
   tags: ["autodocs"],
-  argTypes: {},
+  argTypes: {
+    variant: {
+      description: "The button expect a variant.",
+    },
+    children: {
+      description: "The label is passed as children.",
+    }
+  },
   args: {
     variant: "primary",
     children: "Click me",
