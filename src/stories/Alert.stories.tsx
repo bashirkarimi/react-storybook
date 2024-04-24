@@ -8,14 +8,9 @@ import {
   faHandPointUp,
 } from "@fortawesome/free-regular-svg-icons";
 
-// import { faInfoCircle, faExclamationTriangle, faCheckCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
-
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
   title: "Components/Alert",
   component: Alert,
-  // parameters: { },
-  tags: ["autodocs"],
   argTypes: {},
   args: {
     title: "Alert",
@@ -60,6 +55,7 @@ export const Error = {
     alertType: "error",
     title: "Error Alert",
     text: "This is a danger alert.",
+    closeable: true,
   },
 };
 
