@@ -11,6 +11,7 @@ import {
 export default {
   title: "Components/Alert",
   component: Alert,
+  tags: ["autodocs"],
   argTypes: {},
   args: {
     title: "Alert",
@@ -59,13 +60,13 @@ export const Error = {
   },
 };
 
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 export const AlertClosed = {
   args: {
     closeable: true,
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement }: { canvasElement: HTMLElement }) => {
     const canvas = within(canvasElement);
     const button = await canvas.getByRole("button");
     
