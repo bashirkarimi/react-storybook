@@ -1,5 +1,4 @@
 import Button from "../components/Button";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export default {
   title: "Components/Button",
@@ -12,7 +11,6 @@ export default {
     onClick: () => {
       console.log("Button clicked");
     },
-    icon: faPlus,
   },
   parameters: {
     controls: { expanded: true },
@@ -29,4 +27,4 @@ export const Secondary = {
   args: {
     variant: "secondary",
   },
-}
+};
