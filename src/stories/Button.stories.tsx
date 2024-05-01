@@ -1,22 +1,19 @@
-import Button from "../components/Button";
+import Button from '../components/Button';
 
 export default {
-  title: "Components/Button",
+  title: 'Components/Button',
   component: Button,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
     variant: {
-      description: "The button expect a variant.",
+      description: 'The button expect a variant.',
     },
-    children: {
-      description: "The label is passed as children.",
-    }
   },
   args: {
-    variant: "primary",
-    children: "Click me",
+    variant: 'primary',
+    children: 'button',
     onClick: () => {
-      console.log("Button clicked");
+      console.log('Button clicked');
     },
   },
   parameters: {
@@ -27,11 +24,24 @@ export default {
 export const Default = {
   args: {
     variant: "primary",
+    children: "Primary Button",
   },
 };
 
 export const Secondary = {
   args: {
-    variant: "secondary",
+    variant: 'secondary',
+  },
+};
+
+export const Tertiary = {
+  args: {
+    variant: 'tertiary',
+  },
+};
+
+export const disabled = {
+  args: {
+    disabled: true,
   },
 };
