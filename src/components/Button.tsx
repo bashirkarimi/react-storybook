@@ -2,10 +2,14 @@ import { ComponentProps } from "react";
 
 type ButtonProps = ComponentProps<'button'> & {
   variant: 'primary' | 'secondary' | 'tertiary';
+  /** The medium is the default */
   size: 'small' | 'medium' | 'large';
   onClick: () => void;
 };
 
+/**
+ * Renders a customizable button component.
+ */
 const Button = ({ variant = 'primary', size = 'medium', onClick, ...props }: ButtonProps) => {
   const variantClasses = {
     primary: ` bg-rose-700 border-rose-700 border-2 text-slate-50 hover:bg-rose-800 hover:border-rose-800

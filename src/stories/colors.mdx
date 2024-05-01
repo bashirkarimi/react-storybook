@@ -1,0 +1,9 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
+import colors from "../tokens/colors.json";
+
+<Meta title="Colors" />
+<ColorPalette>
+  {Object.entries(JSON.parse(JSON.stringify(colors))).map(([name, color]) => (
+    <ColorItem title={name} subtitle={color.description} colors={{ color: color.value }} />
+  ))}
+</ColorPalette>
